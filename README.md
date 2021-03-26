@@ -19,6 +19,7 @@ Sistema de Cadastro
 - MySql2
 
 ### Informações:
+- Porta padrão configurada: 3000
 - Arquivo Principal: ./index.js
 - Arquivo de Configurações de Conexão: ./config/config.js
 - Arquivos de Erros: ./errors
