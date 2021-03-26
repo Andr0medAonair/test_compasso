@@ -5,6 +5,7 @@ Interview node.js: sistema de cadastro
    * [Linguagem Utilizada](#linguagem-utilizada)
    * [Requisitos](#requisitos)
    * [Como Usar](#como-usar)
+   * [Funcionalidades](#funcionalidades)
    * [Estruturação](#estruturação)
    * [Rotas](#rotas)
    * [Testes](#testes)
@@ -23,6 +24,18 @@ Interview node.js: sistema de cadastro
 
 ### Como Usar
   - Aplicação roda através do comando npm start ou nodemon index.js
+
+### Funcionalidades
+- [x] Cadastro de clientes
+- [x] Cadastro de cidades
+- [x] Atualização de cadastro de clientes
+- [x] Consulta de clientes
+- [x] Consulta de cidades
+- [x] Consulta de clientes pelo id
+- [x] Consulta de clientes pelo nome
+- [x] Consulta de cidades pelo nome
+- [x] Consulta de cidades pelo estado
+- [x] Remoção de cadastro de clientes
 
 ### Estruturação:
 - Porta padrão configurada: 3000
@@ -51,10 +64,10 @@ Interview node.js: sistema de cadastro
 - Realizados testes unitários através do Jest
 - Para executar testes, utilizar o comando npm test
 - Testes realizados:
-  - Validação de cidades;
-  - Criação de cidades;
-  - Validação de clientes;
-  - Criação de clientes.
+  - [x] Validação de cidades;
+  - [x] Criação de cidades;
+  - [x] Validação de clientes;
+  - [x] Criação de clientes.
 
 ### Ferramentas Utilizadas
 - Visual Studio Code
