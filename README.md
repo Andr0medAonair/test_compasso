@@ -33,7 +33,7 @@ Sistema de Cadastro
 
 ### Rotas:
 - Cadastrar clientes: /localhost:3000/clients/
-- Cadastrar clientes: /localhost:3000/cities/
+- Cadastrar cidades: /localhost:3000/cities/
 - Listar todos os clientes: /localhost:3000/clients/
 - Listar todas as cidades: /localhost:3000/cities/
 - Busca clientes pela id: /localhost:3000/clients/id/[id]
