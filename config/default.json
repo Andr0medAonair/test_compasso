@@ -1,0 +1,11 @@
+{
+    "mysql": {
+        "database": "basic_registry",
+        "user": "root",
+        "password": "MasterMySQL",
+        "host": "localhost"
+    },
+    "api": {
+        "port": 3000
+    }
+}
