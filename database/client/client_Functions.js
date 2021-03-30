@@ -57,26 +57,6 @@ module.exports ={
         )
     },
 //DELETE REQUESTED CLIENT'S DATA
-    /**
-     * @swagger
-     * /{id}:
-     *   delete:
-     *     summary: Remove the client by id
-     *     tags: [Client]
-     *     parameters:
-     *       - in: path
-     *         name: id
-     *         schema:
-     *              type: "integer"
-     *              format: "int64"
-     *         required: true
-     *         description: The book id
-     *     responses:
-     *       200:
-     *         description: Removed client {id} successfully!
-     *       404:
-     *         description: Client not found!
-     */
 
     remove(id){
         return model.destroy({

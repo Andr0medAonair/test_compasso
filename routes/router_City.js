@@ -160,6 +160,8 @@ routerCity.get('/state/:nameState', async (req, res, aux) => {
      *                  type: array
      *                  items:
      *                      $ref: "#/components/schemas/City"
+     *          "400":
+     *              description: Field {field} is not valid!!
      *          "500":
      *              description: Internal server error!
      */
