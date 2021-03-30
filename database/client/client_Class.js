@@ -52,12 +52,14 @@ class Client {
         fields.forEach((field) => {
             const values = this[field]
             const date = Date.parse(values)
-            if (typeof values === 'string' && values.length > 0 || typeof values === 'number') {
-                if (isNaN(date))
-                    dataUpdate[field] = values
-                else
+            if(typeof values === 'string' && values.length > 0){
+                if(field === 'birthday')
                     dataUpdate[field] = moment(values, 'DD/MM/YYYY').format('YYYY-MM-DD')
+                else
+                    dataUpdate[field] = values
             }
+            else
+                dataUpdate[field] = values
         })
 
         if (Object.keys(dataUpdate).length === 0) {
