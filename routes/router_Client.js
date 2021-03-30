@@ -110,10 +110,16 @@ routerClient.get('/', async (req, res) => {
 
     /**
      * @swagger
-     * /clients:
+     * /clients/id/{idClient}:
      *  get:
-     *      summary: Returns the list of all the clients
+     *      summary: Find a client by ID
      *      tags: [Client]
+     *      parameters:
+     *          - in: path
+     *            name: idClient
+     *            description: "ID of client required"
+     *            type: integer
+     *            required: true
      *      responses:
      *          "200":
      *              description: Operation successful!
@@ -121,6 +127,10 @@ routerClient.get('/', async (req, res) => {
      *                  type: array
      *                  items:
      *                      $ref: "#/components/schemas/Client"
+     *          "404":
+     *              description: Client not found!
+     *          "500":
+     *              description: Internal server error!
      */
 
 routerClient.get('/id/:idClient', async (req, res, aux) => {
@@ -137,6 +147,31 @@ routerClient.get('/id/:idClient', async (req, res, aux) => {
         aux(error)
     }
 })
+
+    /**
+     * @swagger
+     * /clients/name/{nameClient}:
+     *  get:
+     *      summary: Find a client by name
+     *      tags: [Client]
+     *      parameters:
+     *          - in: path
+     *            name: nameClient
+     *            description: "Name of client required"
+     *            type: string
+     *            required: true
+     *      responses:
+     *          "200":
+     *              description: Operation successful!
+     *              schema:
+     *                  type: array
+     *                  items:
+     *                      $ref: "#/components/schemas/Client"
+     *          "404":
+     *              description: Client not found!
+     *          "500":
+     *              description: Internal server error!
+     */
 
 routerClient.get('/name/:nameClient', async (req, res, aux) => {
     try {
