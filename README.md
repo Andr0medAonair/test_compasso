@@ -50,6 +50,7 @@
 - Mocks para testes: ./database/city/__mocks__ (cidades) e ./database/clients__mocks__ (clientes)
 
 ### Rotas:
+- Swagger: localhost:3000/api-docs/
 - Cadastrar clientes: /localhost:3000/clients/
 - Cadastrar cidades: /localhost:3000/cities/
 - Listar todos os clientes: /localhost:3000/clients/
