@@ -77,6 +77,9 @@
 - MySQL
 
 ### Bibliotecas
+- Swagger
+- Swagger-jsdoc
+- Swagger-ui-express
 - Jest
 - Express
 - Sequelize
